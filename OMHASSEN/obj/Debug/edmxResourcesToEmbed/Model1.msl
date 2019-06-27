@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="storeModelStoreContainer" CdmEntityContainer="storeEntities2">
+    <EntitySetMapping Name="C__MigrationHistory">
+      <EntityTypeMapping TypeName="storeModel.C__MigrationHistory">
+        <MappingFragment StoreEntitySet="__MigrationHistory">
+          <ScalarProperty Name="MigrationId" ColumnName="MigrationId" />
+          <ScalarProperty Name="ContextKey" ColumnName="ContextKey" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="ProductVersion" ColumnName="ProductVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="storeModel.Category">
+        <MappingFragment StoreEntitySet="Categories">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClientBillDetails">
+      <EntityTypeMapping TypeName="storeModel.ClientBillDetail">
+        <MappingFragment StoreEntitySet="ClientBillDetails">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Paid" ColumnName="Paid" />
+          <ScalarProperty Name="Debt" ColumnName="Debt" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="SaleType" ColumnName="SaleType" />
+          <ScalarProperty Name="AmountPrice" ColumnName="AmountPrice" />
+          <ScalarProperty Name="AdeyMortagaType" ColumnName="AdeyMortagaType" />
+          <ScalarProperty Name="ClientBillObj_ID" ColumnName="ClientBillObj_ID" />
+          <ScalarProperty Name="ProductOpj_ID" ColumnName="ProductOpj_ID" />
+          <ScalarProperty Name="RepresentitiveBillDetailsObj_ID" ColumnName="RepresentitiveBillDetailsObj_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClientBills">
+      <EntityTypeMapping TypeName="storeModel.ClientBill">
+        <MappingFragment StoreEntitySet="ClientBills">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="AgelCahType" ColumnName="AgelCahType" />
+          <ScalarProperty Name="PaidPrice" ColumnName="PaidPrice" />
+          <ScalarProperty Name="DeptPrice" ColumnName="DeptPrice" />
+          <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+          <ScalarProperty Name="ClientObj_NationalID" ColumnName="ClientObj_NationalID" />
+          <ScalarProperty Name="RepresentiveOBject_NationalID" ColumnName="RepresentiveOBject_NationalID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Clients">
+      <EntityTypeMapping TypeName="storeModel.Client">
+        <MappingFragment StoreEntitySet="Clients">
+          <ScalarProperty Name="NationalID" ColumnName="NationalID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MeasuringUnits">
+      <EntityTypeMapping TypeName="storeModel.MeasuringUnit">
+        <MappingFragment StoreEntitySet="MeasuringUnits">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UnitName" ColumnName="UnitName" />
+          <ScalarProperty Name="PID" ColumnName="PID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="storeModel.Product">
+        <MappingFragment StoreEntitySet="Products">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="AmountInStock" ColumnName="AmountInStock" />
+          <ScalarProperty Name="AmountSaled" ColumnName="AmountSaled" />
+          <ScalarProperty Name="WholesalePrice" ColumnName="WholesalePrice" />
+          <ScalarProperty Name="RetailPrice" ColumnName="RetailPrice" />
+          <ScalarProperty Name="CategoryObj_ID" ColumnName="CategoryObj_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RepresentitiveBillDetails">
+      <EntityTypeMapping TypeName="storeModel.RepresentitiveBillDetail">
+        <MappingFragment StoreEntitySet="RepresentitiveBillDetails">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="GivenAmount" ColumnName="GivenAmount" />
+          <ScalarProperty Name="SaledAmount" ColumnName="SaledAmount" />
+          <ScalarProperty Name="ReturnedAmount" ColumnName="ReturnedAmount" />
+          <ScalarProperty Name="GivenAmountPrice" ColumnName="GivenAmountPrice" />
+          <ScalarProperty Name="SaledAmountPrice" ColumnName="SaledAmountPrice" />
+          <ScalarProperty Name="ReturnedAmountPrice" ColumnName="ReturnedAmountPrice" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="SaleType" ColumnName="SaleType" />
+          <ScalarProperty Name="ProductObj_ID" ColumnName="ProductObj_ID" />
+          <ScalarProperty Name="RepresentitiveBillObj_ID" ColumnName="RepresentitiveBillObj_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RepresentitiveBills">
+      <EntityTypeMapping TypeName="storeModel.RepresentitiveBill">
+        <MappingFragment StoreEntitySet="RepresentitiveBills">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+          <ScalarProperty Name="Representitive_NationalID" ColumnName="Representitive_NationalID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Representitives">
+      <EntityTypeMapping TypeName="storeModel.Representitive">
+        <MappingFragment StoreEntitySet="Representitives">
+          <ScalarProperty Name="NationalID" ColumnName="NationalID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Salary" ColumnName="Salary" />
+          <ScalarProperty Name="TargetSale" ColumnName="TargetSale" />
+          <ScalarProperty Name="Commition" ColumnName="Commition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SupplyerBillDetails">
+      <EntityTypeMapping TypeName="storeModel.SupplyerBillDetail">
+        <MappingFragment StoreEntitySet="SupplyerBillDetails">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Paid" ColumnName="Paid" />
+          <ScalarProperty Name="Debt" ColumnName="Debt" />
+          <ScalarProperty Name="PurchaseType" ColumnName="PurchaseType" />
+          <ScalarProperty Name="AmountPrice" ColumnName="AmountPrice" />
+          <ScalarProperty Name="AdeyMortagaType" ColumnName="AdeyMortagaType" />
+          <ScalarProperty Name="productOpj_ID" ColumnName="productOpj_ID" />
+          <ScalarProperty Name="SupplyerBillobj_ID" ColumnName="SupplyerBillobj_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SupplyerBills">
+      <EntityTypeMapping TypeName="storeModel.SupplyerBill">
+        <MappingFragment StoreEntitySet="SupplyerBills">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DeptPrice" ColumnName="DeptPrice" />
+          <ScalarProperty Name="PaidPrice" ColumnName="PaidPrice" />
+          <ScalarProperty Name="supplyer_ID" ColumnName="supplyer_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Supplyers">
+      <EntityTypeMapping TypeName="storeModel.Supplyer">
+        <MappingFragment StoreEntitySet="Supplyers">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="storeModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="SupplyerProducts" TypeName="storeModel.SupplyerProducts" StoreEntitySet="SupplyerProducts">
+      <EndProperty Name="Products">
+        <ScalarProperty Name="ID" ColumnName="Product_ID" />
+      </EndProperty>
+      <EndProperty Name="Supplyers">
+        <ScalarProperty Name="ID" ColumnName="Supplyer_ID" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

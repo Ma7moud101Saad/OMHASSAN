@@ -1,0 +1,133 @@
+c:\users\moustafa shamaa\documents\visual studio 2017\Projects\OMHASSEN\OMHASSEN\bin\Debug\OMHASSEN.exe.config
+c:\users\moustafa shamaa\documents\visual studio 2017\Projects\OMHASSEN\OMHASSEN\bin\Debug\OMHASSEN.exe
+c:\users\moustafa shamaa\documents\visual studio 2017\Projects\OMHASSEN\OMHASSEN\bin\Debug\OMHASSEN.pdb
+c:\users\moustafa shamaa\documents\visual studio 2017\Projects\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.csprojResolveAssemblyReference.cache
+c:\users\moustafa shamaa\documents\visual studio 2017\Projects\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.adduser.resources
+c:\users\moustafa shamaa\documents\visual studio 2017\Projects\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.searchproduct.resources
+c:\users\moustafa shamaa\documents\visual studio 2017\Projects\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.customerreport.resources
+c:\users\moustafa shamaa\documents\visual studio 2017\Projects\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.Properties.Resources.resources
+c:\users\moustafa shamaa\documents\visual studio 2017\Projects\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.searchwithname.resources
+c:\users\moustafa shamaa\documents\visual studio 2017\Projects\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.csproj.GenerateResource.Cache
+c:\users\moustafa shamaa\documents\visual studio 2017\Projects\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.exe
+c:\users\moustafa shamaa\documents\visual studio 2017\Projects\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.pdb
+c:\users\moustafa shamaa\documents\visual studio 2017\Projects\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.catogries.resources
+c:\users\moustafa shamaa\documents\visual studio 2017\Projects\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.mowarddetails.resources
+c:\users\moustafa shamaa\documents\visual studio 2017\Projects\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.product.resources
+c:\users\moustafa shamaa\documents\visual studio 2017\Projects\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.Representitive.resources
+C:\Users\moustafa shamaa\Desktop\dddd\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.csprojResolveAssemblyReference.cache
+C:\Users\moustafa shamaa\Desktop\dddd\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.adduser.resources
+C:\Users\moustafa shamaa\Desktop\dddd\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.catogries.resources
+C:\Users\moustafa shamaa\Desktop\dddd\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.dashboard.resources
+C:\Users\moustafa shamaa\Desktop\dddd\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.LoginForm.resources
+C:\Users\moustafa shamaa\Desktop\dddd\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.mowarddetails.resources
+C:\Users\moustafa shamaa\Desktop\dddd\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.Product.resources
+C:\Users\moustafa shamaa\Desktop\dddd\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.Representitive.resources
+C:\Users\moustafa shamaa\Desktop\dddd\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.ReturnedFromClient.resources
+C:\Users\moustafa shamaa\Desktop\dddd\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.searchproduct.resources
+C:\Users\moustafa shamaa\Desktop\dddd\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.customerreport.resources
+C:\Users\moustafa shamaa\Desktop\dddd\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.Properties.Resources.resources
+C:\Users\moustafa shamaa\Desktop\dddd\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.searchwithname.resources
+C:\Users\moustafa shamaa\Desktop\dddd\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN._ٌRepresentiveReport.resources
+C:\Users\moustafa shamaa\Desktop\dddd\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.csproj.GenerateResource.Cache
+C:\Users\moustafa shamaa\Desktop\dddd\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.exe
+C:\Users\moustafa shamaa\Desktop\dddd\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.pdb
+C:\Users\moustafa shamaa\Desktop\dddd\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.Representive.resources
+C:\Users\Antonuos Milad\Desktop\jjjjjj\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.csprojResolveAssemblyReference.cache
+C:\Users\Antonuos Milad\Desktop\jjjjjj\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.adduser.resources
+C:\Users\Antonuos Milad\Desktop\jjjjjj\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.catogries.resources
+C:\Users\Antonuos Milad\Desktop\jjjjjj\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.dashboard.resources
+C:\Users\Antonuos Milad\Desktop\jjjjjj\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.LoginForm.resources
+C:\Users\Antonuos Milad\Desktop\jjjjjj\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.mowarddetails.resources
+C:\Users\Antonuos Milad\Desktop\jjjjjj\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.Product.resources
+C:\Users\Antonuos Milad\Desktop\jjjjjj\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.products.resources
+C:\Users\Antonuos Milad\Desktop\jjjjjj\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.Representitive.resources
+C:\Users\Antonuos Milad\Desktop\jjjjjj\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.Representive.resources
+C:\Users\Antonuos Milad\Desktop\jjjjjj\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.ReturnedFromClient.resources
+C:\Users\Antonuos Milad\Desktop\jjjjjj\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.searchproduct.resources
+C:\Users\Antonuos Milad\Desktop\jjjjjj\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.customerreport.resources
+C:\Users\Antonuos Milad\Desktop\jjjjjj\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.Properties.Resources.resources
+C:\Users\Antonuos Milad\Desktop\jjjjjj\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.searchwithname.resources
+C:\Users\Antonuos Milad\Desktop\jjjjjj\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN._ٌRepresentiveReport.resources
+C:\Users\Antonuos Milad\Desktop\jjjjjj\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.csproj.GenerateResource.Cache
+C:\Users\Antonuos Milad\Desktop\jjjjjj\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.csproj.CoreCompileInputs.cache
+C:\Users\Antonuos Milad\Desktop\jjjjjj\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.exe
+C:\Users\Antonuos Milad\Desktop\jjjjjj\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.pdb
+C:\Users\Antonuos Milad\Desktop\jjjjjj\OMHASSEN\OMHASSEN\bin\Debug\OMHASSEN.exe.config
+C:\Users\Antonuos Milad\Desktop\jjjjjj\OMHASSEN\OMHASSEN\bin\Debug\OMHASSEN.exe
+C:\Users\Antonuos Milad\Desktop\jjjjjj\OMHASSEN\OMHASSEN\bin\Debug\OMHASSEN.pdb
+C:\Users\Antonuos Milad\Desktop\jjjjjj\OMHASSEN\OMHASSEN\bin\Debug\EasyTabs.dll
+C:\Users\Antonuos Milad\Desktop\jjjjjj\OMHASSEN\OMHASSEN\bin\Debug\EntityFramework.dll
+C:\Users\Antonuos Milad\Desktop\jjjjjj\OMHASSEN\OMHASSEN\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Antonuos Milad\Desktop\jjjjjj\OMHASSEN\OMHASSEN\bin\Debug\Microsoft.WindowsAPICodePack.dll
+C:\Users\Antonuos Milad\Desktop\jjjjjj\OMHASSEN\OMHASSEN\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll
+C:\Users\Antonuos Milad\Desktop\jjjjjj\OMHASSEN\OMHASSEN\bin\Debug\Win32Interop.Dwmapi.dll
+C:\Users\Antonuos Milad\Desktop\jjjjjj\OMHASSEN\OMHASSEN\bin\Debug\Win32Interop.Gdi32.dll
+C:\Users\Antonuos Milad\Desktop\jjjjjj\OMHASSEN\OMHASSEN\bin\Debug\Win32Interop.Kernel32.dll
+C:\Users\Antonuos Milad\Desktop\jjjjjj\OMHASSEN\OMHASSEN\bin\Debug\Win32Interop.User32.dll
+C:\Users\Antonuos Milad\Desktop\jjjjjj\OMHASSEN\OMHASSEN\bin\Debug\Win32Interop.Uxtheme.dll
+C:\Users\Antonuos Milad\Desktop\jjjjjj\OMHASSEN\OMHASSEN\bin\Debug\EasyTabs.xml
+C:\Users\Antonuos Milad\Desktop\jjjjjj\OMHASSEN\OMHASSEN\bin\Debug\EntityFramework.xml
+C:\Users\Antonuos Milad\Desktop\jjjjjj\OMHASSEN\OMHASSEN\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Antonuos Milad\Desktop\jjjjjj\OMHASSEN\OMHASSEN\bin\Debug\Win32Interop.Dwmapi.pdb
+C:\Users\Antonuos Milad\Desktop\jjjjjj\OMHASSEN\OMHASSEN\bin\Debug\Win32Interop.Gdi32.pdb
+C:\Users\Antonuos Milad\Desktop\jjjjjj\OMHASSEN\OMHASSEN\bin\Debug\Win32Interop.Gdi32.xml
+C:\Users\Antonuos Milad\Desktop\jjjjjj\OMHASSEN\OMHASSEN\bin\Debug\Win32Interop.Kernel32.pdb
+C:\Users\Antonuos Milad\Desktop\jjjjjj\OMHASSEN\OMHASSEN\bin\Debug\Win32Interop.User32.pdb
+C:\Users\Antonuos Milad\Desktop\jjjjjj\OMHASSEN\OMHASSEN\bin\Debug\Win32Interop.Uxtheme.pdb
+C:\Users\Antonuos Milad\Desktop\jjjjjj\OMHASSEN\OMHASSEN\bin\Debug\EntityFramework.SqlServerCompact.dll
+C:\Users\Antonuos Milad\Desktop\jjjjjj\OMHASSEN\OMHASSEN\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\Antonuos Milad\Desktop\jjjjjj\OMHASSEN\OMHASSEN\bin\Debug\EntityFramework.SqlServerCompact.xml
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\bin\Debug\OMHASSEN.exe.config
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\bin\Debug\OMHASSEN.exe
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\bin\Debug\OMHASSEN.pdb
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\bin\Debug\EasyTabs.dll
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\bin\Debug\EntityFramework.dll
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\bin\Debug\EntityFramework.SqlServerCompact.dll
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\bin\Debug\Microsoft.WindowsAPICodePack.dll
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\bin\Debug\Win32Interop.Dwmapi.dll
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\bin\Debug\Win32Interop.Gdi32.dll
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\bin\Debug\Win32Interop.Kernel32.dll
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\bin\Debug\Win32Interop.User32.dll
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\bin\Debug\Win32Interop.Uxtheme.dll
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\bin\Debug\EasyTabs.xml
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\bin\Debug\EntityFramework.xml
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\bin\Debug\EntityFramework.SqlServerCompact.xml
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\bin\Debug\Win32Interop.Dwmapi.pdb
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\bin\Debug\Win32Interop.Gdi32.pdb
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\bin\Debug\Win32Interop.Gdi32.xml
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\bin\Debug\Win32Interop.Kernel32.pdb
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\bin\Debug\Win32Interop.User32.pdb
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\bin\Debug\Win32Interop.Uxtheme.pdb
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.adduser.resources
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.catogries.resources
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.dashboard.resources
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.LoginForm.resources
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.mowarddetails.resources
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.products.resources
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.Representive.resources
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.ReturnedFromClient.resources
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.searchproduct.resources
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.customerreport.resources
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.Properties.Resources.resources
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.searchwithname.resources
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN._ٌRepresentiveReport.resources
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.csproj.GenerateResource.Cache
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.exe
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.pdb
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.AppContainer.resources
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.sader.resources
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.clientform.resources
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.representiveform.resources
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.supplierform.resources
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.formofclient.resources
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.csprojResolveAssemblyReference.cache
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.supplierbill.resources
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.RepresentitveReport.resources
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.storeForm.resources
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.supplierformdet.resources
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.clientformdd.resources
+C:\Users\moustafa shamaa\Desktop\New folder (4)\EditForms\OMHASSEN\OMHASSEN\obj\Debug\OMHASSEN.repreport.resources

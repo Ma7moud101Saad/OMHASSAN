@@ -1,0 +1,419 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="storeModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="C__MigrationHistory">
+    <Key>
+      <PropertyRef Name="MigrationId" />
+      <PropertyRef Name="ContextKey" />
+    </Key>
+    <Property Name="MigrationId" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ContextKey" Type="String" MaxLength="300" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Model" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+    <Property Name="ProductVersion" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Products" Relationship="Self.FK_dbo_Products_dbo_Categories_CategoryObj_ID" FromRole="Categories" ToRole="Products" />
+  </EntityType>
+  <EntityType Name="ClientBillDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Amount" Type="Double" Nullable="false" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Paid" Type="Double" Nullable="false" />
+    <Property Name="Debt" Type="Double" Nullable="false" />
+    <Property Name="Type" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SaleType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AmountPrice" Type="Double" Nullable="false" />
+    <Property Name="AdeyMortagaType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ClientBillObj_ID" Type="Int32" />
+    <Property Name="ProductOpj_ID" Type="Int32" />
+    <Property Name="RepresentitiveBillDetailsObj_ID" Type="Int32" />
+    <NavigationProperty Name="ClientBill" Relationship="Self.FK_dbo_ClientBillDetails_dbo_ClientBills_ClientBillObj_ID" FromRole="ClientBillDetails" ToRole="ClientBills" />
+    <NavigationProperty Name="Product" Relationship="Self.FK_dbo_ClientBillDetails_dbo_Products_ProductOpj_ID" FromRole="ClientBillDetails" ToRole="Products" />
+    <NavigationProperty Name="RepresentitiveBillDetail" Relationship="Self.FK_dbo_ClientBillDetails_dbo_RepresentitiveBillDetails_RepresentitiveBillDetailsObj_ID" FromRole="ClientBillDetails" ToRole="RepresentitiveBillDetails" />
+  </EntityType>
+  <EntityType Name="ClientBill">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="type" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AgelCahType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PaidPrice" Type="Double" />
+    <Property Name="DeptPrice" Type="Double" />
+    <Property Name="TotalPrice" Type="Double" />
+    <Property Name="ClientObj_NationalID" Type="Int32" />
+    <Property Name="RepresentiveOBject_NationalID" Type="Int32" />
+    <NavigationProperty Name="ClientBillDetails" Relationship="Self.FK_dbo_ClientBillDetails_dbo_ClientBills_ClientBillObj_ID" FromRole="ClientBills" ToRole="ClientBillDetails" />
+    <NavigationProperty Name="Client" Relationship="Self.FK_dbo_ClientBills_dbo_Clients_ClientObj_NationalID" FromRole="ClientBills" ToRole="Clients" />
+    <NavigationProperty Name="Representitive" Relationship="Self.FK_dbo_ClientBills_dbo_Representitives_RepresentiveOBject_NationalID" FromRole="ClientBills" ToRole="Representitives" />
+  </EntityType>
+  <EntityType Name="Client">
+    <Key>
+      <PropertyRef Name="NationalID" />
+    </Key>
+    <Property Name="NationalID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="ClientBills" Relationship="Self.FK_dbo_ClientBills_dbo_Clients_ClientObj_NationalID" FromRole="Clients" ToRole="ClientBills" />
+  </EntityType>
+  <EntityType Name="MeasuringUnit">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UnitName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Product" Relationship="Self.FK_dbo_MeasuringUnits_dbo_Products_PID" FromRole="MeasuringUnits" ToRole="Products" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AmountInStock" Type="Double" Nullable="false" />
+    <Property Name="AmountSaled" Type="Double" Nullable="false" />
+    <Property Name="WholesalePrice" Type="Double" Nullable="false" />
+    <Property Name="RetailPrice" Type="Double" Nullable="false" />
+    <Property Name="CategoryObj_ID" Type="Int32" />
+    <NavigationProperty Name="Category" Relationship="Self.FK_dbo_Products_dbo_Categories_CategoryObj_ID" FromRole="Products" ToRole="Categories" />
+    <NavigationProperty Name="ClientBillDetails" Relationship="Self.FK_dbo_ClientBillDetails_dbo_Products_ProductOpj_ID" FromRole="Products" ToRole="ClientBillDetails" />
+    <NavigationProperty Name="MeasuringUnits" Relationship="Self.FK_dbo_MeasuringUnits_dbo_Products_PID" FromRole="Products" ToRole="MeasuringUnits" />
+    <NavigationProperty Name="RepresentitiveBillDetails" Relationship="Self.FK_dbo_RepresentitiveBillDetails_dbo_Products_ProductObj_ID" FromRole="Products" ToRole="RepresentitiveBillDetails" />
+    <NavigationProperty Name="SupplyerBillDetails" Relationship="Self.FK_dbo_SupplyerBillDetails_dbo_Products_productOpj_ID" FromRole="Products" ToRole="SupplyerBillDetails" />
+    <NavigationProperty Name="Supplyers" Relationship="Self.SupplyerProducts" FromRole="Products" ToRole="Supplyers" />
+  </EntityType>
+  <EntityType Name="RepresentitiveBillDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="GivenAmount" Type="Double" Nullable="false" />
+    <Property Name="SaledAmount" Type="Double" Nullable="false" />
+    <Property Name="ReturnedAmount" Type="Double" Nullable="false" />
+    <Property Name="GivenAmountPrice" Type="Double" Nullable="false" />
+    <Property Name="SaledAmountPrice" Type="Double" Nullable="false" />
+    <Property Name="ReturnedAmountPrice" Type="Double" Nullable="false" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="SaleType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ProductObj_ID" Type="Int32" />
+    <Property Name="RepresentitiveBillObj_ID" Type="Int32" />
+    <NavigationProperty Name="ClientBillDetails" Relationship="Self.FK_dbo_ClientBillDetails_dbo_RepresentitiveBillDetails_RepresentitiveBillDetailsObj_ID" FromRole="RepresentitiveBillDetails" ToRole="ClientBillDetails" />
+    <NavigationProperty Name="Product" Relationship="Self.FK_dbo_RepresentitiveBillDetails_dbo_Products_ProductObj_ID" FromRole="RepresentitiveBillDetails" ToRole="Products" />
+    <NavigationProperty Name="RepresentitiveBill" Relationship="Self.FK_dbo_RepresentitiveBillDetails_dbo_RepresentitiveBills_RepresentitiveBillObj_ID" FromRole="RepresentitiveBillDetails" ToRole="RepresentitiveBills" />
+  </EntityType>
+  <EntityType Name="RepresentitiveBill">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TotalPrice" Type="Double" />
+    <Property Name="Representitive_NationalID" Type="Int32" />
+    <NavigationProperty Name="RepresentitiveBillDetails" Relationship="Self.FK_dbo_RepresentitiveBillDetails_dbo_RepresentitiveBills_RepresentitiveBillObj_ID" FromRole="RepresentitiveBills" ToRole="RepresentitiveBillDetails" />
+    <NavigationProperty Name="Representitive" Relationship="Self.FK_dbo_RepresentitiveBills_dbo_Representitives_Representitive_NationalID" FromRole="RepresentitiveBills" ToRole="Representitives" />
+  </EntityType>
+  <EntityType Name="Representitive">
+    <Key>
+      <PropertyRef Name="NationalID" />
+    </Key>
+    <Property Name="NationalID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Salary" Type="Double" Nullable="false" />
+    <Property Name="TargetSale" Type="Double" Nullable="false" />
+    <Property Name="Commition" Type="Double" Nullable="false" />
+    <NavigationProperty Name="ClientBills" Relationship="Self.FK_dbo_ClientBills_dbo_Representitives_RepresentiveOBject_NationalID" FromRole="Representitives" ToRole="ClientBills" />
+    <NavigationProperty Name="RepresentitiveBills" Relationship="Self.FK_dbo_RepresentitiveBills_dbo_Representitives_Representitive_NationalID" FromRole="Representitives" ToRole="RepresentitiveBills" />
+  </EntityType>
+  <EntityType Name="SupplyerBillDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Amount" Type="Double" Nullable="false" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Paid" Type="Double" Nullable="false" />
+    <Property Name="Debt" Type="Double" Nullable="false" />
+    <Property Name="PurchaseType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AmountPrice" Type="Double" Nullable="false" />
+    <Property Name="AdeyMortagaType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="productOpj_ID" Type="Int32" />
+    <Property Name="SupplyerBillobj_ID" Type="Int32" />
+    <NavigationProperty Name="Product" Relationship="Self.FK_dbo_SupplyerBillDetails_dbo_Products_productOpj_ID" FromRole="SupplyerBillDetails" ToRole="Products" />
+    <NavigationProperty Name="SupplyerBill" Relationship="Self.FK_dbo_SupplyerBillDetails_dbo_SupplyerBills_SupplyerBillobj_ID" FromRole="SupplyerBillDetails" ToRole="SupplyerBills" />
+  </EntityType>
+  <EntityType Name="SupplyerBill">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DeptPrice" Type="Double" Nullable="false" />
+    <Property Name="PaidPrice" Type="Double" Nullable="false" />
+    <Property Name="supplyer_ID" Type="Int32" />
+    <NavigationProperty Name="SupplyerBillDetails" Relationship="Self.FK_dbo_SupplyerBillDetails_dbo_SupplyerBills_SupplyerBillobj_ID" FromRole="SupplyerBills" ToRole="SupplyerBillDetails" />
+    <NavigationProperty Name="Supplyer" Relationship="Self.FK_dbo_SupplyerBills_dbo_Supplyers_supplyer_ID" FromRole="SupplyerBills" ToRole="Supplyers" />
+  </EntityType>
+  <EntityType Name="Supplyer">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="SupplyerBills" Relationship="Self.FK_dbo_SupplyerBills_dbo_Supplyers_supplyer_ID" FromRole="Supplyers" ToRole="SupplyerBills" />
+    <NavigationProperty Name="Products" Relationship="Self.SupplyerProducts" FromRole="Supplyers" ToRole="Products" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Role" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Username" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK_dbo_Products_dbo_Categories_CategoryObj_ID">
+    <End Role="Categories" Type="Self.Category" Multiplicity="0..1" />
+    <End Role="Products" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categories">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="CategoryObj_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_ClientBillDetails_dbo_ClientBills_ClientBillObj_ID">
+    <End Role="ClientBills" Type="Self.ClientBill" Multiplicity="0..1" />
+    <End Role="ClientBillDetails" Type="Self.ClientBillDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ClientBills">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ClientBillDetails">
+        <PropertyRef Name="ClientBillObj_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_ClientBillDetails_dbo_Products_ProductOpj_ID">
+    <End Role="Products" Type="Self.Product" Multiplicity="0..1" />
+    <End Role="ClientBillDetails" Type="Self.ClientBillDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ClientBillDetails">
+        <PropertyRef Name="ProductOpj_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_ClientBillDetails_dbo_RepresentitiveBillDetails_RepresentitiveBillDetailsObj_ID">
+    <End Role="RepresentitiveBillDetails" Type="Self.RepresentitiveBillDetail" Multiplicity="0..1" />
+    <End Role="ClientBillDetails" Type="Self.ClientBillDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RepresentitiveBillDetails">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ClientBillDetails">
+        <PropertyRef Name="RepresentitiveBillDetailsObj_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_ClientBills_dbo_Clients_ClientObj_NationalID">
+    <End Role="Clients" Type="Self.Client" Multiplicity="0..1" />
+    <End Role="ClientBills" Type="Self.ClientBill" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clients">
+        <PropertyRef Name="NationalID" />
+      </Principal>
+      <Dependent Role="ClientBills">
+        <PropertyRef Name="ClientObj_NationalID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_ClientBills_dbo_Representitives_RepresentiveOBject_NationalID">
+    <End Role="Representitives" Type="Self.Representitive" Multiplicity="0..1" />
+    <End Role="ClientBills" Type="Self.ClientBill" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Representitives">
+        <PropertyRef Name="NationalID" />
+      </Principal>
+      <Dependent Role="ClientBills">
+        <PropertyRef Name="RepresentiveOBject_NationalID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_MeasuringUnits_dbo_Products_PID">
+    <End Role="Products" Type="Self.Product" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="MeasuringUnits" Type="Self.MeasuringUnit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="MeasuringUnits">
+        <PropertyRef Name="PID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_RepresentitiveBillDetails_dbo_Products_ProductObj_ID">
+    <End Role="Products" Type="Self.Product" Multiplicity="0..1" />
+    <End Role="RepresentitiveBillDetails" Type="Self.RepresentitiveBillDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="RepresentitiveBillDetails">
+        <PropertyRef Name="ProductObj_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_SupplyerBillDetails_dbo_Products_productOpj_ID">
+    <End Role="Products" Type="Self.Product" Multiplicity="0..1" />
+    <End Role="SupplyerBillDetails" Type="Self.SupplyerBillDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="SupplyerBillDetails">
+        <PropertyRef Name="productOpj_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_RepresentitiveBillDetails_dbo_RepresentitiveBills_RepresentitiveBillObj_ID">
+    <End Role="RepresentitiveBills" Type="Self.RepresentitiveBill" Multiplicity="0..1" />
+    <End Role="RepresentitiveBillDetails" Type="Self.RepresentitiveBillDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RepresentitiveBills">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="RepresentitiveBillDetails">
+        <PropertyRef Name="RepresentitiveBillObj_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_RepresentitiveBills_dbo_Representitives_Representitive_NationalID">
+    <End Role="Representitives" Type="Self.Representitive" Multiplicity="0..1" />
+    <End Role="RepresentitiveBills" Type="Self.RepresentitiveBill" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Representitives">
+        <PropertyRef Name="NationalID" />
+      </Principal>
+      <Dependent Role="RepresentitiveBills">
+        <PropertyRef Name="Representitive_NationalID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_SupplyerBillDetails_dbo_SupplyerBills_SupplyerBillobj_ID">
+    <End Role="SupplyerBills" Type="Self.SupplyerBill" Multiplicity="0..1" />
+    <End Role="SupplyerBillDetails" Type="Self.SupplyerBillDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SupplyerBills">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="SupplyerBillDetails">
+        <PropertyRef Name="SupplyerBillobj_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_SupplyerBills_dbo_Supplyers_supplyer_ID">
+    <End Role="Supplyers" Type="Self.Supplyer" Multiplicity="0..1" />
+    <End Role="SupplyerBills" Type="Self.SupplyerBill" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Supplyers">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="SupplyerBills">
+        <PropertyRef Name="supplyer_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SupplyerProducts">
+    <End Role="Products" Type="Self.Product" Multiplicity="*" />
+    <End Role="Supplyers" Type="Self.Supplyer" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="storeEntities2" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="C__MigrationHistory" EntityType="Self.C__MigrationHistory" />
+    <EntitySet Name="Categories" EntityType="Self.Category" />
+    <EntitySet Name="ClientBillDetails" EntityType="Self.ClientBillDetail" />
+    <EntitySet Name="ClientBills" EntityType="Self.ClientBill" />
+    <EntitySet Name="Clients" EntityType="Self.Client" />
+    <EntitySet Name="MeasuringUnits" EntityType="Self.MeasuringUnit" />
+    <EntitySet Name="Products" EntityType="Self.Product" />
+    <EntitySet Name="RepresentitiveBillDetails" EntityType="Self.RepresentitiveBillDetail" />
+    <EntitySet Name="RepresentitiveBills" EntityType="Self.RepresentitiveBill" />
+    <EntitySet Name="Representitives" EntityType="Self.Representitive" />
+    <EntitySet Name="SupplyerBillDetails" EntityType="Self.SupplyerBillDetail" />
+    <EntitySet Name="SupplyerBills" EntityType="Self.SupplyerBill" />
+    <EntitySet Name="Supplyers" EntityType="Self.Supplyer" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <AssociationSet Name="FK_dbo_Products_dbo_Categories_CategoryObj_ID" Association="Self.FK_dbo_Products_dbo_Categories_CategoryObj_ID">
+      <End Role="Categories" EntitySet="Categories" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_ClientBillDetails_dbo_ClientBills_ClientBillObj_ID" Association="Self.FK_dbo_ClientBillDetails_dbo_ClientBills_ClientBillObj_ID">
+      <End Role="ClientBills" EntitySet="ClientBills" />
+      <End Role="ClientBillDetails" EntitySet="ClientBillDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_ClientBillDetails_dbo_Products_ProductOpj_ID" Association="Self.FK_dbo_ClientBillDetails_dbo_Products_ProductOpj_ID">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="ClientBillDetails" EntitySet="ClientBillDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_ClientBillDetails_dbo_RepresentitiveBillDetails_RepresentitiveBillDetailsObj_ID" Association="Self.FK_dbo_ClientBillDetails_dbo_RepresentitiveBillDetails_RepresentitiveBillDetailsObj_ID">
+      <End Role="RepresentitiveBillDetails" EntitySet="RepresentitiveBillDetails" />
+      <End Role="ClientBillDetails" EntitySet="ClientBillDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_ClientBills_dbo_Clients_ClientObj_NationalID" Association="Self.FK_dbo_ClientBills_dbo_Clients_ClientObj_NationalID">
+      <End Role="Clients" EntitySet="Clients" />
+      <End Role="ClientBills" EntitySet="ClientBills" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_ClientBills_dbo_Representitives_RepresentiveOBject_NationalID" Association="Self.FK_dbo_ClientBills_dbo_Representitives_RepresentiveOBject_NationalID">
+      <End Role="Representitives" EntitySet="Representitives" />
+      <End Role="ClientBills" EntitySet="ClientBills" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_MeasuringUnits_dbo_Products_PID" Association="Self.FK_dbo_MeasuringUnits_dbo_Products_PID">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="MeasuringUnits" EntitySet="MeasuringUnits" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_RepresentitiveBillDetails_dbo_Products_ProductObj_ID" Association="Self.FK_dbo_RepresentitiveBillDetails_dbo_Products_ProductObj_ID">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="RepresentitiveBillDetails" EntitySet="RepresentitiveBillDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_SupplyerBillDetails_dbo_Products_productOpj_ID" Association="Self.FK_dbo_SupplyerBillDetails_dbo_Products_productOpj_ID">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="SupplyerBillDetails" EntitySet="SupplyerBillDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_RepresentitiveBillDetails_dbo_RepresentitiveBills_RepresentitiveBillObj_ID" Association="Self.FK_dbo_RepresentitiveBillDetails_dbo_RepresentitiveBills_RepresentitiveBillObj_ID">
+      <End Role="RepresentitiveBills" EntitySet="RepresentitiveBills" />
+      <End Role="RepresentitiveBillDetails" EntitySet="RepresentitiveBillDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_RepresentitiveBills_dbo_Representitives_Representitive_NationalID" Association="Self.FK_dbo_RepresentitiveBills_dbo_Representitives_Representitive_NationalID">
+      <End Role="Representitives" EntitySet="Representitives" />
+      <End Role="RepresentitiveBills" EntitySet="RepresentitiveBills" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_SupplyerBillDetails_dbo_SupplyerBills_SupplyerBillobj_ID" Association="Self.FK_dbo_SupplyerBillDetails_dbo_SupplyerBills_SupplyerBillobj_ID">
+      <End Role="SupplyerBills" EntitySet="SupplyerBills" />
+      <End Role="SupplyerBillDetails" EntitySet="SupplyerBillDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_SupplyerBills_dbo_Supplyers_supplyer_ID" Association="Self.FK_dbo_SupplyerBills_dbo_Supplyers_supplyer_ID">
+      <End Role="Supplyers" EntitySet="Supplyers" />
+      <End Role="SupplyerBills" EntitySet="SupplyerBills" />
+    </AssociationSet>
+    <AssociationSet Name="SupplyerProducts" Association="Self.SupplyerProducts">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="Supplyers" EntitySet="Supplyers" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

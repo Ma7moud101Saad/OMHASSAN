@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="storeModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+<Schema Namespace="projectModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
   <EntityType Name="C__MigrationHistory">
     <Key>
       <PropertyRef Name="MigrationId" />
@@ -30,9 +30,9 @@
     <Property Name="Type" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="SaleType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="AmountPrice" Type="Double" Nullable="false" />
-    <Property Name="AdeyMortagaType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="ClientBillObj_ID" Type="Int32" />
     <Property Name="ProductOpj_ID" Type="Int32" />
+    <Property Name="AdeyMortagaType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="RepresentitiveBillDetailsObj_ID" Type="Int32" />
     <NavigationProperty Name="ClientBill" Relationship="Self.FK_dbo_ClientBillDetails_dbo_ClientBills_ClientBillObj_ID" FromRole="ClientBillDetails" ToRole="ClientBills" />
     <NavigationProperty Name="Product" Relationship="Self.FK_dbo_ClientBillDetails_dbo_Products_ProductOpj_ID" FromRole="ClientBillDetails" ToRole="Products" />
@@ -44,12 +44,12 @@
     </Key>
     <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="type" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-    <Property Name="AgelCahType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-    <Property Name="PaidPrice" Type="Double" />
-    <Property Name="DeptPrice" Type="Double" />
     <Property Name="TotalPrice" Type="Double" />
     <Property Name="ClientObj_NationalID" Type="Int32" />
     <Property Name="RepresentiveOBject_NationalID" Type="Int32" />
+    <Property Name="AgelCahType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PaidPrice" Type="Double" />
+    <Property Name="DeptPrice" Type="Double" />
     <NavigationProperty Name="ClientBillDetails" Relationship="Self.FK_dbo_ClientBillDetails_dbo_ClientBills_ClientBillObj_ID" FromRole="ClientBills" ToRole="ClientBillDetails" />
     <NavigationProperty Name="Client" Relationship="Self.FK_dbo_ClientBills_dbo_Clients_ClientObj_NationalID" FromRole="ClientBills" ToRole="Clients" />
     <NavigationProperty Name="Representitive" Relationship="Self.FK_dbo_ClientBills_dbo_Representitives_RepresentiveOBject_NationalID" FromRole="ClientBills" ToRole="Representitives" />
@@ -114,8 +114,8 @@
       <PropertyRef Name="ID" />
     </Key>
     <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="TotalPrice" Type="Double" />
     <Property Name="Representitive_NationalID" Type="Int32" />
+    <Property Name="TotalPrice" Type="Double" />
     <NavigationProperty Name="RepresentitiveBillDetails" Relationship="Self.FK_dbo_RepresentitiveBillDetails_dbo_RepresentitiveBills_RepresentitiveBillObj_ID" FromRole="RepresentitiveBills" ToRole="RepresentitiveBillDetails" />
     <NavigationProperty Name="Representitive" Relationship="Self.FK_dbo_RepresentitiveBills_dbo_Representitives_Representitive_NationalID" FromRole="RepresentitiveBills" ToRole="Representitives" />
   </EntityType>
@@ -144,9 +144,9 @@
     <Property Name="Debt" Type="Double" Nullable="false" />
     <Property Name="PurchaseType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="AmountPrice" Type="Double" Nullable="false" />
-    <Property Name="AdeyMortagaType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="productOpj_ID" Type="Int32" />
     <Property Name="SupplyerBillobj_ID" Type="Int32" />
+    <Property Name="AdeyMortagaType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="Product" Relationship="Self.FK_dbo_SupplyerBillDetails_dbo_Products_productOpj_ID" FromRole="SupplyerBillDetails" ToRole="Products" />
     <NavigationProperty Name="SupplyerBill" Relationship="Self.FK_dbo_SupplyerBillDetails_dbo_SupplyerBills_SupplyerBillobj_ID" FromRole="SupplyerBillDetails" ToRole="SupplyerBills" />
   </EntityType>
@@ -344,7 +344,7 @@
     <End Role="Products" Type="Self.Product" Multiplicity="*" />
     <End Role="Supplyers" Type="Self.Supplyer" Multiplicity="*" />
   </Association>
-  <EntityContainer Name="storeEntities2" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="projectEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="C__MigrationHistory" EntityType="Self.C__MigrationHistory" />
     <EntitySet Name="Categories" EntityType="Self.Category" />
     <EntitySet Name="ClientBillDetails" EntityType="Self.ClientBillDetail" />

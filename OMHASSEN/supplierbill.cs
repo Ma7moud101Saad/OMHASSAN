@@ -28,7 +28,7 @@ namespace OMHASSEN
 
         }
 
-        storeEntities2 context = new storeEntities2();
+        projectEntities context = new projectEntities();
 
 
         private void button4_Click(object sender, EventArgs e)
@@ -158,7 +158,7 @@ namespace OMHASSEN
             SupplyerBill supplyerB = context.SupplyerBills.OrderByDescending(s => s.ID).FirstOrDefault();
             if (supplyerB == null)
             {
-                SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-CEGP0DR\SQLEXPRESS;Initial Catalog=store;Integrated Security=True");
+                SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-9HH57Q0\MSSQLSEVEREX;Initial Catalog=project;Integrated Security=True");
 
                 SqlCommand command = new SqlCommand();
                 connection.Open();

@@ -22,9 +22,9 @@ namespace OMHASSEN
         public string Type { get; set; }
         public string SaleType { get; set; }
         public double AmountPrice { get; set; }
-        public string AdeyMortagaType { get; set; }
         public Nullable<int> ClientBillObj_ID { get; set; }
         public Nullable<int> ProductOpj_ID { get; set; }
+        public string AdeyMortagaType { get; set; }
         public Nullable<int> RepresentitiveBillDetailsObj_ID { get; set; }
     
         public virtual ClientBill ClientBill { get; set; }

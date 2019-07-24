@@ -5,14 +5,14 @@ namespace OMHASSEN.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<OMHASSEN.storeEntities2>
+    internal sealed class Configuration : DbMigrationsConfiguration<OMHASSEN.projectEntities>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(OMHASSEN.storeEntities2 context)
+        protected override void Seed(OMHASSEN.projectEntities context)
         {
             //  This method will be called after migrating to the latest version.
 

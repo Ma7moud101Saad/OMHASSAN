@@ -12,7 +12,7 @@ namespace OMHASSEN
 {
     public partial class searchwithname : Form
     {
-        storeEntities2 context = new storeEntities2();
+        projectEntities context = new projectEntities();
         public searchwithname()
         {
             InitializeComponent();
@@ -23,7 +23,7 @@ namespace OMHASSEN
             try
             {
                 string NameOfRrepresentive = textBox5.Text;
-                storeEntities2 context = new storeEntities2();
+                projectEntities context = new projectEntities();
                 List<Representitive> rbList = context.Representitives.Where(r => r.Name.Contains(NameOfRrepresentive)).ToList();
                 dataGridView1.DataSource = rbList;
             }
@@ -37,7 +37,7 @@ namespace OMHASSEN
         {
             try
             {
-                storeEntities2 context = new storeEntities2();
+                projectEntities context = new projectEntities();
                 if (textBox6.Text != "")
                 {
                     double SearchSalary = double.Parse(textBox6.Text);

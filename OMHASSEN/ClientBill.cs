@@ -22,12 +22,12 @@ namespace OMHASSEN
     
         public int ID { get; set; }
         public string type { get; set; }
-        public string AgelCahType { get; set; }
-        public Nullable<double> PaidPrice { get; set; }
-        public Nullable<double> DeptPrice { get; set; }
         public Nullable<double> TotalPrice { get; set; }
         public Nullable<int> ClientObj_NationalID { get; set; }
         public Nullable<int> RepresentiveOBject_NationalID { get; set; }
+        public string AgelCahType { get; set; }
+        public Nullable<double> PaidPrice { get; set; }
+        public Nullable<double> DeptPrice { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ClientBillDetail> ClientBillDetails { get; set; }

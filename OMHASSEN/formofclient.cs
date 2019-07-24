@@ -32,7 +32,7 @@ namespace OMHASSEN
         {
             InitializeComponent();
         }
-        storeEntities2 context = new storeEntities2();
+        projectEntities context = new projectEntities();
         Representitive x;
 
 
@@ -260,7 +260,7 @@ namespace OMHASSEN
             ClientBill clientB = context.ClientBills.OrderByDescending(c => c.ID).FirstOrDefault();
             if (clientB == null)
             {
-                SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-CEGP0DR\SQLEXPRESS;Initial Catalog=store;Integrated Security=True");
+                SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-9HH57Q0\MSSQLSEVEREX;Initial Catalog=project;Integrated Security=True");
 
                 SqlCommand command = new SqlCommand();
                 connection.Open();

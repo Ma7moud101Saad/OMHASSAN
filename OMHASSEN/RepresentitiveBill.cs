@@ -21,8 +21,8 @@ namespace OMHASSEN
         }
     
         public int ID { get; set; }
-        public Nullable<double> TotalPrice { get; set; }
         public Nullable<int> Representitive_NationalID { get; set; }
+        public Nullable<double> TotalPrice { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<RepresentitiveBillDetail> RepresentitiveBillDetails { get; set; }

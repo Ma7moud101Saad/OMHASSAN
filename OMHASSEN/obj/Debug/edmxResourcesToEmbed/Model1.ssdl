@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="storeModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+<Schema Namespace="projectModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
   <EntityType Name="__MigrationHistory">
     <Key>
       <PropertyRef Name="MigrationId" />
@@ -29,9 +29,9 @@
     <Property Name="Type" Type="nvarchar(max)" />
     <Property Name="SaleType" Type="nvarchar(max)" />
     <Property Name="AmountPrice" Type="float" Nullable="false" />
-    <Property Name="AdeyMortagaType" Type="nvarchar(max)" />
     <Property Name="ClientBillObj_ID" Type="int" />
     <Property Name="ProductOpj_ID" Type="int" />
+    <Property Name="AdeyMortagaType" Type="nvarchar(max)" />
     <Property Name="RepresentitiveBillDetailsObj_ID" Type="int" />
   </EntityType>
   <EntityType Name="ClientBills">
@@ -40,12 +40,12 @@
     </Key>
     <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="type" Type="nvarchar(max)" />
-    <Property Name="AgelCahType" Type="nvarchar(max)" />
-    <Property Name="PaidPrice" Type="float" />
-    <Property Name="DeptPrice" Type="float" />
     <Property Name="TotalPrice" Type="float" />
     <Property Name="ClientObj_NationalID" Type="int" />
     <Property Name="RepresentiveOBject_NationalID" Type="int" />
+    <Property Name="AgelCahType" Type="nvarchar(max)" />
+    <Property Name="PaidPrice" Type="float" />
+    <Property Name="DeptPrice" Type="float" />
   </EntityType>
   <EntityType Name="Clients">
     <Key>
@@ -96,8 +96,8 @@
       <PropertyRef Name="ID" />
     </Key>
     <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="TotalPrice" Type="float" />
     <Property Name="Representitive_NationalID" Type="int" />
+    <Property Name="TotalPrice" Type="float" />
   </EntityType>
   <EntityType Name="Representitives">
     <Key>
@@ -122,9 +122,9 @@
     <Property Name="Debt" Type="float" Nullable="false" />
     <Property Name="PurchaseType" Type="nvarchar(max)" />
     <Property Name="AmountPrice" Type="float" Nullable="false" />
-    <Property Name="AdeyMortagaType" Type="nvarchar(max)" />
     <Property Name="productOpj_ID" Type="int" />
     <Property Name="SupplyerBillobj_ID" Type="int" />
+    <Property Name="AdeyMortagaType" Type="nvarchar(max)" />
   </EntityType>
   <EntityType Name="SupplyerBills">
     <Key>
@@ -348,7 +348,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="storeModelStoreContainer">
+  <EntityContainer Name="projectModelStoreContainer">
     <EntitySet Name="__MigrationHistory" EntityType="Self.__MigrationHistory" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Categories" EntityType="Self.Categories" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="ClientBillDetails" EntityType="Self.ClientBillDetails" Schema="dbo" store:Type="Tables" />

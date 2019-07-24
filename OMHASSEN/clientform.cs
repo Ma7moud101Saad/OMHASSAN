@@ -16,7 +16,7 @@ namespace OMHASSEN
         {
             InitializeComponent();
         }
-        storeEntities2 storeContext = new storeEntities2();
+        projectEntities storeContext = new projectEntities();
 
 
         public class supproductlocal
@@ -137,6 +137,7 @@ namespace OMHASSEN
                     storeContext.Clients.Add(newClient);
                     storeContext.SaveChanges();
                 }
+                MessageBox.Show("لقد تم أضافة العميل");
             }
             catch (Exception)
             {

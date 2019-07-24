@@ -21,9 +21,9 @@ namespace OMHASSEN
         public double Debt { get; set; }
         public string PurchaseType { get; set; }
         public double AmountPrice { get; set; }
-        public string AdeyMortagaType { get; set; }
         public Nullable<int> productOpj_ID { get; set; }
         public Nullable<int> SupplyerBillobj_ID { get; set; }
+        public string AdeyMortagaType { get; set; }
     
         public virtual Product Product { get; set; }
         public virtual SupplyerBill SupplyerBill { get; set; }

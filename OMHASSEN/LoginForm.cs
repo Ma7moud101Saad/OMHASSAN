@@ -22,8 +22,8 @@ namespace OMHASSEN
         {
             
             
-
-                storeEntities2 db = new storeEntities2();
+            
+                projectEntities db = new projectEntities();
             var logincheck = db.Users.Where(d => d.Username == textBox1.Text && d.Password == txt_password.Text).SingleOrDefault();
 
            // if (textBox1.Text == "Admin" && txt_password.Text == "12345")

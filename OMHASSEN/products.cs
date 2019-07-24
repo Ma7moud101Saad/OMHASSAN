@@ -12,7 +12,7 @@ namespace OMHASSEN
 {
     public partial class products : Form
     {
-        storeEntities2 context = new storeEntities2();
+        projectEntities context = new projectEntities();
         public products()
         {
             InitializeComponent();
@@ -114,10 +114,13 @@ namespace OMHASSEN
                             // user clicked yes
                             string catName = listView1.Items[i].SubItems[1].Text;
                             int? catID = context.Categories.FirstOrDefault(c => c.Name == catName).ID;
-                            int.TryParse(listView1.Items[i].SubItems[2].Text, out int Amount);
+                           int Amount= int.Parse(listView1.Items[i].SubItems[2].Text);
+                            //  int.TryParse(listView1.Items[i].SubItems[2].Text, out int Amount);
+                            int wholeSalePrice = int.Parse(listView1.Items[i].SubItems[4].Text);
                             string measuringUnit = listView1.Items[i].SubItems[3].Text;
-                            int.TryParse(listView1.Items[i].SubItems[4].Text, out int wholeSalePrice);
-                            int.TryParse(listView1.Items[i].SubItems[5].Text, out int retailPrice);
+                            //int.TryParse(listView1.Items[i].SubItems[4].Text, out int wholeSalePrice);
+                            int retailPrice = int.Parse(listView1.Items[i].SubItems[5].Text);
+                            //int.TryParse(listView1.Items[i].SubItems[5].Text, out int retailPrice);
 
                             //Save changes to the database
                             Product NewProduct = new Product
@@ -149,10 +152,13 @@ namespace OMHASSEN
 
                         string catName = listView1.Items[i].SubItems[1].Text;
                         int? catID = context.Categories.FirstOrDefault(c => c.Name == catName).ID;
-                        int.TryParse(listView1.Items[i].SubItems[2].Text, out int Amount);
+                        int Amount = int.Parse(listView1.Items[i].SubItems[2].Text);
+                      //  int.TryParse(listView1.Items[i].SubItems[2].Text, out int Amount);
                         string measuringUnit = listView1.Items[i].SubItems[3].Text;
-                        int.TryParse(listView1.Items[i].SubItems[4].Text, out int wholeSalePrice);
-                        int.TryParse(listView1.Items[i].SubItems[5].Text, out int retailPrice);
+                        int wholeSalePrice = int.Parse(listView1.Items[i].SubItems[4].Text);
+                      //  int.TryParse(listView1.Items[i].SubItems[4].Text, out int wholeSalePrice);
+                       // int.TryParse(listView1.Items[i].SubItems[5].Text, out int retailPrice);
+                        int retailPrice = int.Parse(listView1.Items[i].SubItems[5].Text);
 
                         //Save product changes to the database
                         Product NewProduct = new Product

@@ -16,7 +16,7 @@ namespace OMHASSEN
         {
             InitializeComponent();
         }
-        storeEntities2 storeContext = new storeEntities2();
+        projectEntities storeContext = new projectEntities();
 
 
         public class supproductlocal

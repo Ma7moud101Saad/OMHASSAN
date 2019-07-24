@@ -12,7 +12,7 @@ namespace OMHASSEN
 {
     public partial class searchproduct : Form
     {
-        storeEntities2 context = new storeEntities2();
+        projectEntities context = new projectEntities();
         public searchproduct()
         {
             InitializeComponent();
@@ -20,6 +20,7 @@ namespace OMHASSEN
 
         private void comboSupplyer_SelectedIndexChanged(object sender, EventArgs e)
         {
+            
 
 
 

@@ -17,7 +17,7 @@ namespace OMHASSEN
             InitializeComponent();
         }
 
-        storeEntities2 context = new storeEntities2();
+        projectEntities context = new projectEntities();
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {

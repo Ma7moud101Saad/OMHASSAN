@@ -12,7 +12,7 @@ namespace OMHASSEN
 {
     public partial class catogries : Form
     {
-        storeEntities2 context = new storeEntities2();
+        projectEntities context = new projectEntities();
         public catogries()
         {
             InitializeComponent();
@@ -106,6 +106,7 @@ namespace OMHASSEN
                 context.SaveChanges();
                     
             }
+                MessageBox.Show("لقد تم أضافة الأصناف");
             }
             catch
             {

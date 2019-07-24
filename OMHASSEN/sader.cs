@@ -28,7 +28,7 @@ namespace OMHASSEN
 
         }
         List<supproductlocal> supproductlocalList = new List<supproductlocal>();
-        storeEntities2 context = new storeEntities2();
+        projectEntities context = new projectEntities();
 
        
         private void sader_Load(object sender, EventArgs e)
@@ -42,7 +42,7 @@ namespace OMHASSEN
             RepresentitiveBill representivrB = context.RepresentitiveBills.OrderByDescending(r => r.ID).FirstOrDefault();
             if (representivrB == null)
             {
-                SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-CEGP0DR\SQLEXPRESS;Initial Catalog=store;Integrated Security=True");
+                SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-9HH57Q0\MSSQLSEVEREX;Initial Catalog=project;Integrated Security=True");
 
                 SqlCommand command = new SqlCommand();
                 connection.Open();
@@ -171,10 +171,18 @@ namespace OMHASSEN
                     context.RepresentitiveBillDetails.Add(newRepresentiveBd);
                     context.SaveChanges();
                     Product pro = context.Products.FirstOrDefault(p => p.ID == item.ProductObj_ID);
-                    pro.AmountInStock = pro.AmountInStock - item.GivenAmount;
-                    context.SaveChanges();
-                }
+                    if (pro.AmountInStock > item.GivenAmount)
+                    {
+                        pro.AmountInStock = pro.AmountInStock - item.GivenAmount;
+                        context.SaveChanges();
 
+                    }
+                    else {
+                        MessageBox.Show("الكمية المطلوبة أكبر من الكمية الموجوده فى المخزن");
+                    }
+                  
+                }
+                supproductlocalList.Clear();
             }
             catch
             {

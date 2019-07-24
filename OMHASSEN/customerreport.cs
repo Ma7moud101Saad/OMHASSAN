@@ -12,7 +12,7 @@ namespace OMHASSEN
 {
     public partial class customerreport : Form
     {
-        storeEntities2 context = new storeEntities2();
+        projectEntities context = new projectEntities();
         public customerreport()
         {
             InitializeComponent();
@@ -47,7 +47,7 @@ namespace OMHASSEN
         {
             try
             {
-                storeEntities2 context = new storeEntities2();
+                projectEntities context = new projectEntities();
                 List<Client> clientList = context.Clients.Where(c => c.Name.Contains(textBox7.Text)).ToList();
                 dataGridView1.DataSource = clientList;
 

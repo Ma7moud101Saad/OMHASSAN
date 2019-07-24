@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="storeModelStoreContainer" CdmEntityContainer="storeEntities2">
+  <EntityContainerMapping StorageEntityContainer="projectModelStoreContainer" CdmEntityContainer="projectEntities">
     <EntitySetMapping Name="C__MigrationHistory">
-      <EntityTypeMapping TypeName="storeModel.C__MigrationHistory">
+      <EntityTypeMapping TypeName="projectModel.C__MigrationHistory">
         <MappingFragment StoreEntitySet="__MigrationHistory">
           <ScalarProperty Name="MigrationId" ColumnName="MigrationId" />
           <ScalarProperty Name="ContextKey" ColumnName="ContextKey" />
@@ -12,7 +12,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Categories">
-      <EntityTypeMapping TypeName="storeModel.Category">
+      <EntityTypeMapping TypeName="projectModel.Category">
         <MappingFragment StoreEntitySet="Categories">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Name" ColumnName="Name" />
@@ -20,7 +20,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="ClientBillDetails">
-      <EntityTypeMapping TypeName="storeModel.ClientBillDetail">
+      <EntityTypeMapping TypeName="projectModel.ClientBillDetail">
         <MappingFragment StoreEntitySet="ClientBillDetails">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Amount" ColumnName="Amount" />
@@ -30,29 +30,29 @@
           <ScalarProperty Name="Type" ColumnName="Type" />
           <ScalarProperty Name="SaleType" ColumnName="SaleType" />
           <ScalarProperty Name="AmountPrice" ColumnName="AmountPrice" />
-          <ScalarProperty Name="AdeyMortagaType" ColumnName="AdeyMortagaType" />
           <ScalarProperty Name="ClientBillObj_ID" ColumnName="ClientBillObj_ID" />
           <ScalarProperty Name="ProductOpj_ID" ColumnName="ProductOpj_ID" />
+          <ScalarProperty Name="AdeyMortagaType" ColumnName="AdeyMortagaType" />
           <ScalarProperty Name="RepresentitiveBillDetailsObj_ID" ColumnName="RepresentitiveBillDetailsObj_ID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="ClientBills">
-      <EntityTypeMapping TypeName="storeModel.ClientBill">
+      <EntityTypeMapping TypeName="projectModel.ClientBill">
         <MappingFragment StoreEntitySet="ClientBills">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="type" ColumnName="type" />
-          <ScalarProperty Name="AgelCahType" ColumnName="AgelCahType" />
-          <ScalarProperty Name="PaidPrice" ColumnName="PaidPrice" />
-          <ScalarProperty Name="DeptPrice" ColumnName="DeptPrice" />
           <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
           <ScalarProperty Name="ClientObj_NationalID" ColumnName="ClientObj_NationalID" />
           <ScalarProperty Name="RepresentiveOBject_NationalID" ColumnName="RepresentiveOBject_NationalID" />
+          <ScalarProperty Name="AgelCahType" ColumnName="AgelCahType" />
+          <ScalarProperty Name="PaidPrice" ColumnName="PaidPrice" />
+          <ScalarProperty Name="DeptPrice" ColumnName="DeptPrice" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Clients">
-      <EntityTypeMapping TypeName="storeModel.Client">
+      <EntityTypeMapping TypeName="projectModel.Client">
         <MappingFragment StoreEntitySet="Clients">
           <ScalarProperty Name="NationalID" ColumnName="NationalID" />
           <ScalarProperty Name="Name" ColumnName="Name" />
@@ -61,7 +61,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="MeasuringUnits">
-      <EntityTypeMapping TypeName="storeModel.MeasuringUnit">
+      <EntityTypeMapping TypeName="projectModel.MeasuringUnit">
         <MappingFragment StoreEntitySet="MeasuringUnits">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="UnitName" ColumnName="UnitName" />
@@ -70,7 +70,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Products">
-      <EntityTypeMapping TypeName="storeModel.Product">
+      <EntityTypeMapping TypeName="projectModel.Product">
         <MappingFragment StoreEntitySet="Products">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Name" ColumnName="Name" />
@@ -83,7 +83,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="RepresentitiveBillDetails">
-      <EntityTypeMapping TypeName="storeModel.RepresentitiveBillDetail">
+      <EntityTypeMapping TypeName="projectModel.RepresentitiveBillDetail">
         <MappingFragment StoreEntitySet="RepresentitiveBillDetails">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="GivenAmount" ColumnName="GivenAmount" />
@@ -100,16 +100,16 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="RepresentitiveBills">
-      <EntityTypeMapping TypeName="storeModel.RepresentitiveBill">
+      <EntityTypeMapping TypeName="projectModel.RepresentitiveBill">
         <MappingFragment StoreEntitySet="RepresentitiveBills">
           <ScalarProperty Name="ID" ColumnName="ID" />
-          <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
           <ScalarProperty Name="Representitive_NationalID" ColumnName="Representitive_NationalID" />
+          <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Representitives">
-      <EntityTypeMapping TypeName="storeModel.Representitive">
+      <EntityTypeMapping TypeName="projectModel.Representitive">
         <MappingFragment StoreEntitySet="Representitives">
           <ScalarProperty Name="NationalID" ColumnName="NationalID" />
           <ScalarProperty Name="Name" ColumnName="Name" />
@@ -122,7 +122,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="SupplyerBillDetails">
-      <EntityTypeMapping TypeName="storeModel.SupplyerBillDetail">
+      <EntityTypeMapping TypeName="projectModel.SupplyerBillDetail">
         <MappingFragment StoreEntitySet="SupplyerBillDetails">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Amount" ColumnName="Amount" />
@@ -131,14 +131,14 @@
           <ScalarProperty Name="Debt" ColumnName="Debt" />
           <ScalarProperty Name="PurchaseType" ColumnName="PurchaseType" />
           <ScalarProperty Name="AmountPrice" ColumnName="AmountPrice" />
-          <ScalarProperty Name="AdeyMortagaType" ColumnName="AdeyMortagaType" />
           <ScalarProperty Name="productOpj_ID" ColumnName="productOpj_ID" />
           <ScalarProperty Name="SupplyerBillobj_ID" ColumnName="SupplyerBillobj_ID" />
+          <ScalarProperty Name="AdeyMortagaType" ColumnName="AdeyMortagaType" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="SupplyerBills">
-      <EntityTypeMapping TypeName="storeModel.SupplyerBill">
+      <EntityTypeMapping TypeName="projectModel.SupplyerBill">
         <MappingFragment StoreEntitySet="SupplyerBills">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="DeptPrice" ColumnName="DeptPrice" />
@@ -148,7 +148,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Supplyers">
-      <EntityTypeMapping TypeName="storeModel.Supplyer">
+      <EntityTypeMapping TypeName="projectModel.Supplyer">
         <MappingFragment StoreEntitySet="Supplyers">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Name" ColumnName="Name" />
@@ -158,7 +158,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Users">
-      <EntityTypeMapping TypeName="storeModel.User">
+      <EntityTypeMapping TypeName="projectModel.User">
         <MappingFragment StoreEntitySet="Users">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Name" ColumnName="Name" />
@@ -168,7 +168,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <AssociationSetMapping Name="SupplyerProducts" TypeName="storeModel.SupplyerProducts" StoreEntitySet="SupplyerProducts">
+    <AssociationSetMapping Name="SupplyerProducts" TypeName="projectModel.SupplyerProducts" StoreEntitySet="SupplyerProducts">
       <EndProperty Name="Products">
         <ScalarProperty Name="ID" ColumnName="Product_ID" />
       </EndProperty>

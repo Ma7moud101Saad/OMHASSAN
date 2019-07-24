@@ -12,7 +12,7 @@ namespace OMHASSEN
 {
     public partial class representiveform : Form
     {
-        storeEntities2 storeContext = new storeEntities2();
+        projectEntities storeContext = new projectEntities();
         public representiveform()
         {
             InitializeComponent();
